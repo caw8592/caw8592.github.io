@@ -43,7 +43,7 @@ body {
 
 .main {
     margin-left: 20%;
-    margin-top: 5%;
+    margin-top: 7%;
 }
 
 h1 {
@@ -100,24 +100,13 @@ button:hover {
 
 .footer {
     margin-top: 10%;
-    background-color: gray;
 }
 
 .footer h1 {
-    font-size: 15px;
-}
-
-.footer.gmail {
-    float: left;
-    width:33%;
-}
-
-.footer.phone {
-    float: left;
-    width:33;
-}
-
-.footer.github {
-    float: left;
-    width:33%;
+    font-size: 20px;
+    margin: 0;
+    width: 33.3%;
+    margin-left: 6%;
+    margin-right: 3%;
+    display: inline;
 }

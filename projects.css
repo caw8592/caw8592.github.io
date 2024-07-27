@@ -46,8 +46,6 @@ body {
     padding-left: 190px;
     font-size: 50px;
     margin-bottom: 0px;
-    background-image: linear-gradient(to bottom, white, lightgray);
-
 }
 
 .mainProjects ul {
@@ -57,7 +55,6 @@ body {
     margin-top:0px;
     padding-right: 180px;
     padding-left: 140px;
-    background-color: lightgray;
 }
 
 .mainProjects li {
@@ -66,7 +63,7 @@ body {
     overflow: hidden;
     padding: 20px;
     margin: 10px;
-    border: 1px solid gray;
+    border: 2px solid gray;
     background-color: white;
     border-radius: 20px;
     transition: 0.3s;
