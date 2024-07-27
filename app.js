@@ -1,2 +1,3 @@
 function alertButton() {
+    alert("hi")
 }
