@@ -42,5 +42,82 @@ body {
 }
 
 .main {
+    margin-left: 20%;
+    margin-top: 5%;
+}
 
+h1 {
+    font-size: 50px;
+    padding-top: 5%;
+    margin-left: 35%;
+}
+
+h2 {
+    color: black;
+    opacity: .7;
+    padding-left: 36%;
+    font-size: 25px;
+}
+
+h3 {
+    font-size: 18px;
+    color: gray;
+    padding-left: 36%;
+    width: 40%;
+    font-family: 'Courier New', Courier, monospace;
+}
+
+button {
+    margin-top: 2%;
+    margin-right: 3%;
+    margin-left: 3%;
+    padding: 20px;
+    font-family: "Copperplate", fantasy;
+    border-radius: 25px;
+    border-width: 1px;
+    border-color: gray;
+    background-color: white;
+}
+
+button:hover {
+    transform: scale(1.01);
+}
+
+.description {
+    float: right;
+    width: 50%;
+}
+
+.me {
+    margin-right: 20px;
+    float: left;
+    width: 50%;
+    width: 400px;
+    height: auto; 
+    object-fit: cover;
+    border-radius: 100%;
+}
+
+.footer {
+    margin-top: 10%;
+    background-color: gray;
+}
+
+.footer h1 {
+    font-size: 15px;
+}
+
+.footer.gmail {
+    float: left;
+    width:33%;
+}
+
+.footer.phone {
+    float: left;
+    width:33;
+}
+
+.footer.github {
+    float: left;
+    width:33%;
 }
