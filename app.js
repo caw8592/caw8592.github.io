@@ -1,5 +1,5 @@
 function about() {
-    location.href="about.html"
+    open("https://www.linkedin.com/in/caiden-williams-5576b2293/")
 }
 
 function projects() {
