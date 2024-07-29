@@ -4,21 +4,19 @@ body {
 }
 
 .navbar {
-    font-family: "Copperplate", fantasy;
     overflow: hidden;
     position: sticky;
     position: -webkit-sticky;
     background-color: white;
-    top: 0;
-    margin: 0;
+    top: 0
 }
 
 .navbar h1 {
     color:black;
-    margin-top: 20px;
-    margin-left: 100px;
-    font-size: 40px;
-    padding: 20px;
+    margin-top: 1rem;
+    margin-left: 6.5rem;
+    font-size: 2rem;
+    padding: 1rem;
 }
 
 .navbar a{
@@ -26,39 +24,51 @@ body {
     display: block;
     color: black;
     text-align: center;
-    padding: 20px;
+    padding: 1rem;
     text-decoration: none;
     opacity: 0.6;
     transition: 0.3s;
 }
 
 .navTabs{
-    margin-top:-95px;
-    margin-right: 100px;
+    margin-top:-5rem;
+    margin-right: 6.5rem;
 }
 
 .navbar a:hover {
     opacity: 1;
 }
 
-.mainProjects h1{
-    padding: 20px;
-    padding-left: 190px;
+.main h1{
+    padding: 1rem;
+    padding-top: 3rem;
+    padding-left: 13%;
     font-size: 50px;
     margin-bottom: 0px;
 }
 
-.mainProjects ul {
+.main h2{
+    font-size: 1.25rem;
+}
+
+.main h3 {
+    font-size: 1.05rem;
+}
+
+.main h4 {
+    font-size: 1rem;
+}
+
+.main ul {
     padding-bottom: 2.5%;
     padding-top: 1%;
     margin-bottom: 0px;
     margin-top:0px;
-    padding-right: 180px;
-    padding-left: 140px;
+    padding-right: 10%;
+    padding-left: 10%;
 }
 
-.mainProjects li {
-    font-family: 'Courier New', Courier, monospace;
+.main li {
     display: block;
     overflow: hidden;
     padding: 20px;
@@ -69,10 +79,24 @@ body {
     transition: 0.3s;
 }
 
-.mainProjects h2{
-    font-size: 20px;
+.main li:hover {
+    transform: scale(1.01);
 }
 
-.mainProjects li:hover {
-    transform: scale(1.01);
+.project {
+    display: flex;
+}
+
+.title {
+    width: 17%;
+    margin-right: 1%;
+}
+
+.about {
+    width: 15%;
+}
+
+.description {
+    width: 70%;
+    float: right;
 }
