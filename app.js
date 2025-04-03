@@ -5,3 +5,5 @@ function about() {
 function projects() {
     location.href="projects.html"
 }
+
+repos = "https://api.github.com/users/caw8592/repos"
