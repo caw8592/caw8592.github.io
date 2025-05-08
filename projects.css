@@ -1,42 +1,41 @@
 body {
     margin: 0;
-    font-family: "Copperplate", fantasy;
 }
 
 .navbar {
-    overflow: hidden;
-    position: sticky;
     position: -webkit-sticky;
-    background-color: white;
-    top: 0
+    position: sticky;
+    width: 100%;
 }
 
-.navbar h1 {
-    color:black;
-    margin-top: 1rem;
-    margin-left: 6.5rem;
-    font-size: 2rem;
-    padding: 1rem;
+.navbar ul {
+  list-style-type: none;
+  margin: 0;
+  padding: 0;
+  overflow: hidden;
+  background-color: #3f3d3d;
+}
+
+.navbar li {
+    float: left;
 }
 
 .navbar a{
-    float: right;
     display: block;
-    color: black;
+    color: white;
     text-align: center;
-    padding: 1rem;
+    padding: 14px 16px;
     text-decoration: none;
-    opacity: 0.6;
-    transition: 0.3s;
 }
 
-.navTabs{
-    margin-top:-5rem;
-    margin-right: 6.5rem;
+.name {
+    color: white;
+    font-size: 1.5em;
+    padding: 14px 16px;
 }
 
-.navbar a:hover {
-    opacity: 1;
+.navbar a:hover, .active {
+    background-color: #000000;
 }
 
 .main h1{
