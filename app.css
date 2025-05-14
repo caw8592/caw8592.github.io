@@ -37,3 +37,11 @@ body{
 .navbar a:hover, .active {
     background-color: #000000;
 }
+
+.my_img {
+    border-radius: 50%;
+    margin: auto;
+    display: block;
+    width: 25%;
+    padding: 2%;
+}

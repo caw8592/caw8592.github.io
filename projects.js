@@ -10,7 +10,7 @@ fetch(repos)
             const name = document.createElement('h2')
             name.textContent = repo.name;
             if(repo.name == "caw8592.github.io")
-                name.textContent = "Portfolio Website";
+                name.textContent = "PortfolioWebsite";
             project.appendChild(name);
 
             const language = document.createElement('p');
