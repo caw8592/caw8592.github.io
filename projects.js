@@ -4,6 +4,7 @@ fetch(repos)
     .then(response => response.json())
     .then(repos => {
         const list = document.getElementById('repo-list');
+        repos.sort((a, b) => new Date(b.pushed_at) - new Date(a.pushed_at));
         repos.forEach(repo => {
             const project = document.createElement('li');
 
@@ -24,6 +25,10 @@ fetch(repos)
             else
                 description.textContent += "This project is still being worked on, come back later to see how it turns out!";
             project.appendChild(description);
+
+            const created = document.createElement('p');
+            created.textContent = "Started: " + repo.created_at.slice(0,10);
+            project.appendChild(created);
 
             const date = document.createElement('p');
             date.textContent = "Last Updated: " + repo.pushed_at.slice(0, 10);
