@@ -1,49 +1,39 @@
 <!DOCTYPE html>
 <html>
 <head>
-    <title>Home - Caiden Williams</title>
+    <title>Caiden Williams</title>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1">
     <link rel="stylesheet" href="app.css">
+    <script src="app.js" async></script>
 </head>
 <body>
 
-    <div class="navbar">
-        <h1> Caiden Williams </h1>
-        <div class="navTabs">
-            <a href="https://www.linkedin.com/in/caiden-williams-5576b2293/"
-        target="_blank">LINKEDIN</a>
-            <a href="projects.html">PROJECTS</a>
-            <a href="">HOME</a>
-        </div>
-    </div>
+<div class="navbar">
+    <ul>
+        <li><a class="active">Home</a></li>
+        <li><a href="projects.html">Projects</a></li>
+        <li><a href="about.html">About</a></li>
+        <li style="float: right;"><a href="https://www.linkedin.com/in/caiden-williams-5576b2293/" target="_blank">LinkedIn</a></li>
+    </ul> 
+</div>
 
 <div class="main">
-    <img class="me" src="me.jpeg" alt="Caiden Williams">
+    <div class="intro">
+        <img class="my_img" src="me.jpg" alt="Caiden Williams" title="Caiden Williams">
 
-    <div>
-        <div class="text">
+        <div class="my_info">
             <h1>Caiden Williams</h1>
             <h2>Rochester Institute of Technology &#x1F3EB</h2>
-            <h2>United States &#x1F4CC</h2>
+            <h2>Waynesboro, PA &#x1F4CC</h2>
             <h2>Full Time Student &#x1F4D6</h2>
         </div>
-        <div class="buttons">
-            <button onclick="projects()">VIEW MY PROJECTS</button>
-            <button onclick="about()">VISIT MY LINKEDIN</button>
-        </div>
     </div>
-
+    <div class="projects">
+        <h1>Recent Projects:</h1>
+        <ul id="repo-list"></ul>
+        <div class="see_more"><a href="projects.html">See More!</a></div>
+    </div>
 </div>
-
-
-<div class="footer">
-    <h1 class="gmail">Gmail: 
-    <a href="">caidenwilliams45@gmail.com</a></h1>
-    <div class="vl"></div>
-    <h1 class="phone">Phone: +1 (717) 331-9577</h1>
-</div>
-
 </body>
-<script src="app.js"></script>
 </html>

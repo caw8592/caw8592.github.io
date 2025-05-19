@@ -1,23 +1,46 @@
-function tcp_button() {
-    open("https://github.com/caw8592/TCP-IP-Hackathon")
-}
+repos = "https://api.github.com/users/caw8592/repos"
 
-function calc_button() {
-    open("https://github.com/caw8592/RITGPACalculator")
-}
+fetch(repos)
+    .then(response => response.json())
+    .then(repos => {
+        const list = document.getElementById('repo-list');
+        repos.sort((a, b) => new Date(b.pushed_at) - new Date(a.pushed_at));
+        repos.forEach(repo => {
+            const project = document.createElement('li');
 
-function pltfrm_button() {
-    open("https://github.com/caw8592/SlimePlatformer")
-}
+            const name = document.createElement('h2')
+            name.textContent = repo.name;
+            if(repo.name == "caw8592.github.io")
+                name.textContent = "PortfolioWebsite";
+            project.appendChild(name);
 
-function hbhacks_button() {
-    open("https://github.com/caw8592/HumanBenchmarkHacks")
-}
+            const language = document.createElement('p');
+            language.textContent += "Language: " + repo.language;
+            project.appendChild(language);
 
-function clicker_button() {
-    open("https://github.com/caw8592/AutoClickerv1.0")
-}
+            const description = document.createElement('p');
+            description.textContent = "Description: ";
+            if(repo.description != null)
+                description.textContent += repo.description;
+            else
+                description.textContent += "This project is still being worked on, come back later to see how it turns out!";
+            project.appendChild(description);
 
-function database_button() {
-    open("https://github.com/sfd2555/PDM-Project")
-}
+            const created = document.createElement('p');
+            created.textContent = "Started: " + repo.created_at.slice(0,10);
+            project.appendChild(created);
+
+            const date = document.createElement('p');
+            date.textContent = "Last Updated: " + repo.pushed_at.slice(0, 10);
+            project.appendChild(date);
+
+            const url = document.createElement('a');
+            url.href = repo.svn_url;
+            url.textContent = "Look at the github!";
+            url.target = "_blank";
+            project.appendChild(url);
+
+            list.appendChild(project);
+        });
+    })
+    .catch(error => console.error('Error fetching repos:', error));
